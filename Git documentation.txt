@@ -1,5 +1,8 @@
 git installation
 
+deletion of a file
+change the commit
+
 create new repository as git in github and downloaded README file in F drive in new file folder
 
 go to command prompt typed following command
@@ -11,6 +14,8 @@ go to command prompt typed following command
 	git config --global user.name “[firstname lastname]”
 	git config --global user.email “[valid-email]”
 
+### Add file to resporsitory ###
+
 	git add README.md.text 	# you will get from directory cmd
 	git status
 	git commit -m "first commit" # to track changes i made to file
@@ -18,29 +23,81 @@ go to command prompt typed following command
 	git branch -M main  # changes master branch to main branch
 	git remote add origin https://github.com/Krithajna/sql-prject.git  # telling that what i make changes here in online aslo shpuld change
 	git remote -v	#it shows the fetching and pushing 
+
 	git push origin main  # where you get signing option
+	git pull # it pull from remote directory
 	git status 
-	git add . # where specific changes will be added if you adding another file
+	git add . # where all the file will be added
 	git commit -m "second commit" # to track changes i made to file
 	git remote -v
 	git push origin main
+
+need to refresh so that appears in online
 
 #### how to clone ####
  creating new file in data science as git1 by cloning respository
 
 	C:\Users\Dell>cd F:\data science
-
 	C:\Users\Dell> F:
-
 	F:\data science>git clone https://github.com/Krithajna/git1.git
-
-
 	F:\data science>cd git1
-
 	F:\data science\git1>git status
+	F:\data science\git1>git add .	# following steps will be the same process as above
+
+### how to untrack the file mission is adding new file and then untacking
+
+F:\new file>git status
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        c.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+F:\new file>git add .
+
+F:\new file>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   c.txt
 
 
-	F:\data science\git1>git add .	#and following be the same process as above
+F:\new file>git restore --staged "c.text"
+error: pathspec 'c.text' did not match any file(s) known to git
+
+F:\new file>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   c.txt
+
+
+F:\new file>git restore --staged <c.txt>
+The syntax of the command is incorrect.
+
+F:\new file>git restore --staged "c.txt"
+
+F:\new file>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        c.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+
+
 
 
 
