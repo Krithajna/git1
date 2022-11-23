@@ -1,0 +1,53 @@
+git installation
+
+create new repository as git in github and downloaded README file in F drive in new file folder
+
+go to command prompt typed following command
+	
+	git --version
+	cd F:\new file   # folder address
+	F:git init     # Initialization
+	dir		# directory
+	git config --global user.name “[firstname lastname]”
+	git config --global user.email “[valid-email]”
+
+	git add README.md.text 	# you will get from directory cmd
+	git status
+	git commit -m "first commit" # to track changes i made to file
+	git branch	
+	git branch -M main  # changes master branch to main branch
+	git remote add origin https://github.com/Krithajna/sql-prject.git  # telling that what i make changes here in online aslo shpuld change
+	git remote -v	#it shows the fetching and pushing 
+	git push origin main  # where you get signing option
+	git status 
+	git add . # where specific changes will be added if you adding another file
+	git commit -m "second commit" # to track changes i made to file
+	git remote -v
+	git push origin main
+
+#### how to clone ####
+ creating new file in data science as git1 by cloning respository
+
+	C:\Users\Dell>cd F:\data science
+
+	C:\Users\Dell> F:
+
+	F:\data science>git clone https://github.com/Krithajna/git1.git
+
+
+	F:\data science>cd git1
+
+	F:\data science\git1>git status
+
+
+	F:\data science\git1>git add .	#and following be the same process as above
+
+
+
+
+	
+	
+	
+	
+	
+ 
